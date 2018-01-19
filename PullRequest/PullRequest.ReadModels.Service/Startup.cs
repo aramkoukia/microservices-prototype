@@ -1,0 +1,69 @@
+﻿using System;
+using System.Net;
+using System.Web.Http;
+using Owin;
+using PullRequest.ReadModels.Service.Views;
+using MicroServices.Common.Exceptions;
+using MicroServices.Common.MessageBus;
+using MicroServices.Common.Repository;
+using EasyNetQ;
+using Newtonsoft.Json;
+using PullRequest.Common.Dto;
+using MicroServices.Common;
+using MicroServices.Common.General.Util;
+using StackExchange.Redis;
+using Aggregate = MicroServices.Common.Aggregate;
+
+namespace PullRequest.ReadModels.Service
+{
+    internal class Startup
+    {
+        public void Configuration(IAppBuilder app)
+        {
+            var webApiConfiguration = ConfigureWebApi();
+            app.UseWebApi(webApiConfiguration);
+            ConfigureHandlers();
+        }
+
+        private static HttpConfiguration ConfigureWebApi()
+        {
+            var config = new HttpConfiguration();
+            config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new { id = RouteParameter.Optional });
+            return config;
+        }
+
+        private void ConfigureHandlers()
+        {
+            var redis = ConnectionMultiplexer.Connect("localhost");
+            var brandView = new OrderView(new RedisReadModelRepository<OrderDto>(redis.GetDatabase()));
+            ServiceLocator.BrandView = brandView;
+
+            var eventMappings = new EventHandlerDiscovery()
+                            .Scan(brandView)
+                            .Handlers;
+
+            var messageBusEndPoint = "PullRequest_readmodel";
+            var topicFilter = "PullRequest.Common.Events";
+
+            var b = RabbitHutch.CreateBus("host=localhost");
+
+            b.Subscribe<PublishedMessage>(messageBusEndPoint,
+            m =>
+            {
+                Aggregate handler;
+                var messageType = Type.GetType(m.MessageTypeName);
+                var handlerFound = eventMappings.TryGetValue(messageType, out handler);
+                if (handlerFound)
+                {
+                    var @event = JsonConvert.DeserializeObject(m.SerialisedMessage, messageType);
+                    handler.AsDynamic().ApplyEvent(@event, ((Event)@event).Version);
+                }
+            },
+            q => q.WithTopic(topicFilter));
+
+            var bus = new RabbitMqBus(b);
+
+            ServiceLocator.Bus = bus;
+        }
+    }
+}
