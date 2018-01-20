@@ -74,17 +74,17 @@
       <Project>{d3d97918-2c26-4bae-a0c5-f90b6f1085dd}</Project>
       <Name>MicroServices.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Admin.Common\Admin.Common.csproj">
+    <ProjectReference Include="..\Admin.Common\Products.Common.csproj">
       <Project>{5E571774-1D77-4F79-AF04-27A85DAC1340}</Project>
-      <Name>Admin.Common</Name>
+      <Name>Products.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Admin.ReadModels.Client\Admin.ReadModels.Client.csproj">
+    <ProjectReference Include="..\Admin.ReadModels.Client\Products.ReadModels.Client.csproj">
       <Project>{C46D3E71-E08D-4F45-B54B-03E3759028E3}</Project>
-      <Name>Admin.ReadModels.Client</Name>
+      <Name>Products.ReadModels.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PullRequest.Service\PullRequest.Service.csproj">
+    <ProjectReference Include="..\PullRequest.Service\Sales.Service.csproj">
       <Project>{2d8df944-bac5-4ce1-807a-6ffce3c51284}</Project>
-      <Name>PullRequest.Service</Name>
+      <Name>Sales.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

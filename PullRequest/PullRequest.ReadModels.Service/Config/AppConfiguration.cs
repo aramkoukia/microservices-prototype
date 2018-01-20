@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace PullRequest.ReadModels.Service.Config
+namespace Sales.ReadModels.Service.Config
 {
     public class AppConfiguration : ConfigurationSection
     {

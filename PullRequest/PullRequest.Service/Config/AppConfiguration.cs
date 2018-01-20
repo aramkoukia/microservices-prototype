@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace PullRequest.Service.Config
+namespace Sales.Service.Config
 {
     public class AppConfiguration : ConfigurationSection
     {

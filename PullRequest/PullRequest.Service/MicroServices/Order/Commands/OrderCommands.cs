@@ -1,7 +1,7 @@
 ﻿using System;
 using MicroServices.Common;
 
-namespace PullRequest.Service.MicroServices.Order.Commands
+namespace Sales.Service.MicroServices.Order.Commands
 {
     public class StartNewOrder : ICommand
     {

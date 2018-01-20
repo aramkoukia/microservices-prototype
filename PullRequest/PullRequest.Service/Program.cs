@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.Owin.Hosting;
-using PullRequest.Service.Config;
+using Sales.Service.Config;
 using Topshelf;
 
-namespace PullRequest.Service
+namespace Sales.Service
 {
     public static class Program
     {
@@ -11,22 +11,22 @@ namespace PullRequest.Service
         {
             HostFactory.Run(x =>
             {
-                x.Service<PullRequestService>(s =>
+                x.Service<SalesService>(s =>
                 {
-                    s.ConstructUsing(name => new PullRequestService());
+                    s.ConstructUsing(name => new SalesService());
                     s.WhenStarted(tc => tc.Start());
                     s.WhenStopped(tc => tc.Stop());
                 });
                 x.RunAsLocalSystem();
 
-                x.SetDescription("PullRequest - Domain Service");
-                x.SetDisplayName("PullRequest - Domain Service");
-                x.SetServiceName("PullRequest.Service");
+                x.SetDescription("Sales - Domain Service");
+                x.SetDisplayName("Sales - Domain Service");
+                x.SetServiceName("Sales.Service");
             });
         }
     }
 
-    public class PullRequestService
+    public class SalesService
     {
         private IDisposable webApp;
 
@@ -34,7 +34,7 @@ namespace PullRequest.Service
         {
             var baseUri = "http://localhost:8183";
 
-            Console.WriteLine("Starting PullRequest Domain Service...");
+            Console.WriteLine("Starting Sales Domain Service...");
             webApp = WebApp.Start<Startup>(baseUri);
             Console.WriteLine("Server running at {0} - press Enter to quit. ", baseUri);
         }

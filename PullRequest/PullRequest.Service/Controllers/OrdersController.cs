@@ -2,11 +2,11 @@
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using PullRequest.Service.DataTransferObjects.Commands;
-using PullRequest.Service.MicroServices.Order.Commands;
+using Sales.Service.DataTransferObjects.Commands;
+using Sales.Service.MicroServices.Order.Commands;
 using MicroServices.Common.Exceptions;
 
-namespace PullRequest.Service.Controllers
+namespace Sales.Service.Controllers
 {
     public class OrdersController : ApiController
     {

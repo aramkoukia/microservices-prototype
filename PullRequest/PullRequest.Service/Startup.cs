@@ -2,19 +2,19 @@
 using System.Web.Http;
 using EventStore.ClientAPI;
 using Owin;
-using PullRequest.Service.Config;
-using PullRequest.Service.MicroServices.Order.Handlers;
+using Sales.Service.Config;
+using Sales.Service.MicroServices.Order.Handlers;
 using MicroServices.Common.MessageBus;
 using MicroServices.Common.Repository;
 using EasyNetQ;
 using MicroServices.Common.General.Util;
-using PullRequest.Service.MicroServices.Product.Handlers;
+using Sales.Service.MicroServices.Product.Handlers;
 using MicroServices.Common;
 using System;
 using Newtonsoft.Json;
-using PullRequest.Service.MicroServices.Product.View;
+using Sales.Service.MicroServices.Product.View;
 
-namespace PullRequest.Service
+namespace Sales.Service
 {
     internal class Startup
     {
@@ -42,7 +42,7 @@ namespace PullRequest.Service
             var bus = new RabbitMqBus(b);
             ServiceLocator.Bus = bus;
 
-            var messageBusEndPoint = "PullRequest_service";
+            var messageBusEndPoint = "Sales_service";
             var topicFilter = "Admin.Common.Events";
 
             var eventStorePort = 12900;

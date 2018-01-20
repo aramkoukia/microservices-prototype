@@ -1,5 +1,5 @@
 ﻿using Admin.Common.Dto;
-using PullRequest.Service.MicroServices.Product.View;
+using Sales.Service.MicroServices.Product.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace PullRequest.Service.Tests
+namespace Sales.Service.Tests
 {
     public class Products
     {

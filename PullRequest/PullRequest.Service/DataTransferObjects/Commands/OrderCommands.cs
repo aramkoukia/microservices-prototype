@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PullRequest.Service.DataTransferObjects.Commands
+namespace Sales.Service.DataTransferObjects.Commands
 {
     public class PlaceOrderCommand
     {

@@ -2,7 +2,7 @@
 using System.Web.Http;
 using MicroServices.Common.Exceptions;
 
-namespace PullRequest.ReadModels.Service.Controllers
+namespace Sales.ReadModels.Service.Controllers
 {
     public class OrdersController : ApiController
     {

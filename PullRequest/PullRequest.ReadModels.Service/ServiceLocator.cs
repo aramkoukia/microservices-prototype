@@ -1,8 +1,8 @@
-﻿using PullRequest.ReadModels.Service.Views;
+﻿using Sales.ReadModels.Service.Views;
 using MicroServices.Common.MessageBus;
 using StackExchange.Redis;
 
-namespace PullRequest.ReadModels.Service
+namespace Sales.ReadModels.Service
 {
     public static class ServiceLocator
     {

@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PullRequest.Service.MicroServices.Product.Domain;
+using Sales.Service.MicroServices.Product.Domain;
 
-namespace PullRequest.Service.MicroServices.Product.View
+namespace Sales.Service.MicroServices.Product.View
 {
     public class ProductView
     {

@@ -1,10 +1,10 @@
 ﻿using System;
-using PullRequest.Service.MicroServices.Order.Commands;
+using Sales.Service.MicroServices.Order.Commands;
 using MicroServices.Common.Repository;
-using PullRequest.Service.MicroServices.Product.View;
+using Sales.Service.MicroServices.Product.View;
 using Admin.ReadModels.Client;
 
-namespace PullRequest.Service.MicroServices.Order.Handlers
+namespace Sales.Service.MicroServices.Order.Handlers
 {
     public class OrderCommandHandlers
     {

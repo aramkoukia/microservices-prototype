@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using MicroServices.Common;
 
-namespace PullRequest.Service.MicroServices.Product.Events
+namespace Sales.Service.MicroServices.Product.Events
 {
     // Exact same class exists in the service that raises this event
     public class ProductCreated : Event

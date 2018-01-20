@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.Owin.Hosting;
-using PullRequest.ReadModels.Service.Config;
+using Sales.ReadModels.Service.Config;
 using Topshelf;
 
-namespace PullRequest.ReadModels.Service
+namespace Sales.ReadModels.Service
 {
     internal static class Program
     {
@@ -11,22 +11,22 @@ namespace PullRequest.ReadModels.Service
         {
             HostFactory.Run(x =>
             {
-                x.Service<PullRequestReadModelsService>(s =>
+                x.Service<SalesReadModelsService>(s =>
                 {
-                    s.ConstructUsing(name => new PullRequestReadModelsService());
+                    s.ConstructUsing(name => new SalesReadModelsService());
                     s.WhenStarted(tc => tc.Start());
                     s.WhenStopped(tc => tc.Stop());
                 });
                 x.RunAsLocalSystem();
 
-                x.SetDescription("PullRequest - Read Models Service");
-                x.SetDisplayName("PullRequest - Read Models Service");
-                x.SetServiceName("PullRequest.ReadModels.Service");
+                x.SetDescription("Sales - Read Models Service");
+                x.SetDisplayName("Sales - Read Models Service");
+                x.SetServiceName("Sales.ReadModels.Service");
             });
         }
     }
 
-    public class PullRequestReadModelsService
+    public class SalesReadModelsService
     {
         private IDisposable webApp;
 
@@ -34,7 +34,7 @@ namespace PullRequest.ReadModels.Service
         {
             var baseUri = "http://localhost:8182";
 
-            Console.WriteLine("Starting PullRequest Read Model Service...");
+            Console.WriteLine("Starting Sales Read Model Service...");
             webApp = WebApp.Start<Startup>(baseUri);
             Console.WriteLine("Server running at {0} - press Enter to quit. ", baseUri);
         }

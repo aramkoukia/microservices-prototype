@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
-using PullRequest.Common.Events;
+using Sales.Common.Events;
 using MicroServices.Common;
 
-namespace PullRequest.Service.MicroServices.Order.Domain
+namespace Sales.Service.MicroServices.Order.Domain
 {
     public class Order : Aggregate
     {

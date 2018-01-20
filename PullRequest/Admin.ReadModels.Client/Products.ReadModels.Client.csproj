@@ -54,9 +54,9 @@
       <Project>{d3d97918-2c26-4bae-a0c5-f90b6f1085dd}</Project>
       <Name>MicroServices.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Admin.Common\Admin.Common.csproj">
+    <ProjectReference Include="..\Admin.Common\Products.Common.csproj">
       <Project>{5e571774-1d77-4f79-af04-27a85dac1340}</Project>
-      <Name>Admin.Common</Name>
+      <Name>Products.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

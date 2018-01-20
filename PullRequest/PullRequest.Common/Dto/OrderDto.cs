@@ -1,7 +1,7 @@
 ﻿using MicroServices.Common;
 using System;
 
-namespace PullRequest.Common.Dto
+namespace Sales.Common.Dto
 {
     public class OrderDto : ReadObject
     {

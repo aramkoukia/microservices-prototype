@@ -1,8 +1,8 @@
-﻿using PullRequest.Service.MicroServices.Order.Handlers;
-using PullRequest.Service.MicroServices.Product.View;
+﻿using Sales.Service.MicroServices.Order.Handlers;
+using Sales.Service.MicroServices.Product.View;
 using MicroServices.Common.MessageBus;
 
-namespace PullRequest.Service
+namespace Sales.Service
 {
     public static class ServiceLocator
     {

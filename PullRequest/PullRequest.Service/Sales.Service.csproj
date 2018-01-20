@@ -125,17 +125,17 @@
       <Project>{d3d97918-2c26-4bae-a0c5-f90b6f1085dd}</Project>
       <Name>MicroServices.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Admin.Common\Admin.Common.csproj">
+    <ProjectReference Include="..\Admin.Common\Products.Common.csproj">
       <Project>{5E571774-1D77-4F79-AF04-27A85DAC1340}</Project>
-      <Name>Admin.Common</Name>
+      <Name>Products.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Admin.ReadModels.Client\Admin.ReadModels.Client.csproj">
+    <ProjectReference Include="..\Admin.ReadModels.Client\Products.ReadModels.Client.csproj">
       <Project>{c46d3e71-e08d-4f45-b54b-03e3759028e3}</Project>
-      <Name>Admin.ReadModels.Client</Name>
+      <Name>Products.ReadModels.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PullRequest.Common\PullRequest.Common.csproj">
+    <ProjectReference Include="..\PullRequest.Common\Sales.Common.csproj">
       <Project>{D3478255-CB14-4F5D-AC78-2E48B5EC2439}</Project>
-      <Name>PullRequest.Common</Name>
+      <Name>Sales.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

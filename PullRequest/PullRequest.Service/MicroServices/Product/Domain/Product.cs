@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PullRequest.Service.MicroServices.Product.Domain
+namespace Sales.Service.MicroServices.Product.Domain
 {
     public class Product : ReadObject
     {

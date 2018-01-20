@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 
-namespace PullRequest.Service.Controllers
+namespace Sales.Service.Controllers
 {
     public static class ApiControllerHelper
     {

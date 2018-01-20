@@ -1,12 +1,12 @@
 ﻿using MicroServices.Common;
-using PullRequest.Service.MicroServices.Product.Events;
+using Sales.Service.MicroServices.Product.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PullRequest.Service.MicroServices.Product.Handlers
+namespace Sales.Service.MicroServices.Product.Handlers
 {
     public class ProductEventsHandler : Aggregate,
         IHandle<ProductCreated>,

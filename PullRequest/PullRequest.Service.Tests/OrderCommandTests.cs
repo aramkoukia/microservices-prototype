@@ -1,6 +1,6 @@
-﻿using PullRequest.Service.MicroServices.Order.Commands;
-using PullRequest.Service.MicroServices.Order.Domain;
-using PullRequest.Service.MicroServices.Order.Handlers;
+﻿using Sales.Service.MicroServices.Order.Commands;
+using Sales.Service.MicroServices.Order.Domain;
+using Sales.Service.MicroServices.Order.Handlers;
 using MicroServices.Common.MessageBus;
 using MicroServices.Common.Repository;
 using System;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace PullRequest.Service.Tests
+namespace Sales.Service.Tests
 {
     public class OrderCommandTests
     {

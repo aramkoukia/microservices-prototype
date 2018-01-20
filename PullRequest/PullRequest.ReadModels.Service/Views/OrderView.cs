@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using Newtonsoft.Json;
-using PullRequest.Common.Dto;
-using PullRequest.Common.Events;
+using Sales.Common.Dto;
+using Sales.Common.Events;
 using MicroServices.Common;
 using MicroServices.Common.Exceptions;
 using MicroServices.Common.Repository;
 using StackExchange.Redis;
 using Admin.ReadModels.Client;
-using PullRequest.Service.MicroServices.Product.View;
+using Sales.Service.MicroServices.Product.View;
 
-namespace PullRequest.ReadModels.Service.Views
+namespace Sales.ReadModels.Service.Views
 {
     public class OrderView : ReadModelAggregate,
         IHandle<OrderPlaced>,

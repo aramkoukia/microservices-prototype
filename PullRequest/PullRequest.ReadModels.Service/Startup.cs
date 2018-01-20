@@ -2,19 +2,19 @@
 using System.Net;
 using System.Web.Http;
 using Owin;
-using PullRequest.ReadModels.Service.Views;
+using Sales.ReadModels.Service.Views;
 using MicroServices.Common.Exceptions;
 using MicroServices.Common.MessageBus;
 using MicroServices.Common.Repository;
 using EasyNetQ;
 using Newtonsoft.Json;
-using PullRequest.Common.Dto;
+using Sales.Common.Dto;
 using MicroServices.Common;
 using MicroServices.Common.General.Util;
 using StackExchange.Redis;
 using Aggregate = MicroServices.Common.Aggregate;
 
-namespace PullRequest.ReadModels.Service
+namespace Sales.ReadModels.Service
 {
     internal class Startup
     {
@@ -42,8 +42,8 @@ namespace PullRequest.ReadModels.Service
                             .Scan(brandView)
                             .Handlers;
 
-            var messageBusEndPoint = "PullRequest_readmodel";
-            var topicFilter = "PullRequest.Common.Events";
+            var messageBusEndPoint = "Sales_readmodel";
+            var topicFilter = "Sales.Common.Events";
 
             var b = RabbitHutch.CreateBus("host=localhost");
 

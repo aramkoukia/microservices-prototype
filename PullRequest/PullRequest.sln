@@ -13,17 +13,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServices.Common", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServices.Common.General", "..\MicroService-Common\MicroServices.Common.General\MicroServices.Common.General.csproj", "{FC24D38F-FB96-43E1-B21E-B6E1BFA1DC11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PullRequest.Service.Tests", "PullRequest.Service.Tests\PullRequest.Service.Tests.csproj", "{FDED84A3-EC77-42E1-BDAA-E5A2A56E800F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Service.Tests", "PullRequest.Service.Tests\Sales.Service.Tests.csproj", "{FDED84A3-EC77-42E1-BDAA-E5A2A56E800F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PullRequest.Service", "PullRequest.Service\PullRequest.Service.csproj", "{2D8DF944-BAC5-4CE1-807A-6FFCE3C51284}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Service", "PullRequest.Service\Sales.Service.csproj", "{2D8DF944-BAC5-4CE1-807A-6FFCE3C51284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PullRequest.ReadModels.Service", "PullRequest.ReadModels.Service\PullRequest.ReadModels.Service.csproj", "{B1ECFB12-A337-49FF-AD09-304B5292A548}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.ReadModels.Service", "PullRequest.ReadModels.Service\Sales.ReadModels.Service.csproj", "{B1ECFB12-A337-49FF-AD09-304B5292A548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PullRequest.Common", "PullRequest.Common\PullRequest.Common.csproj", "{D3478255-CB14-4F5D-AC78-2E48B5EC2439}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Common", "PullRequest.Common\Sales.Common.csproj", "{D3478255-CB14-4F5D-AC78-2E48B5EC2439}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin.ReadModels.Client", "Admin.ReadModels.Client\Admin.ReadModels.Client.csproj", "{C46D3E71-E08D-4F45-B54B-03E3759028E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.ReadModels.Client", "Admin.ReadModels.Client\Products.ReadModels.Client.csproj", "{C46D3E71-E08D-4F45-B54B-03E3759028E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin.Common", "Admin.Common\Admin.Common.csproj", "{5E571774-1D77-4F79-AF04-27A85DAC1340}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.Common", "Admin.Common\Products.Common.csproj", "{5E571774-1D77-4F79-AF04-27A85DAC1340}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

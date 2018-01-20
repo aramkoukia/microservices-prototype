@@ -3,7 +3,7 @@ using System.CodeDom;
 using Newtonsoft.Json;
 using MicroServices.Common;
 
-namespace PullRequest.Common.Events
+namespace Sales.Common.Events
 {
     public class OrderPlaced : Event
     {
