@@ -21,10 +21,10 @@ namespace MicroServices.Common.MessageBus
             this.topic = topic;
             this.handler = handler;
 
-            InitialiseBus();
+            InitializeBus();
         }
 
-        private void InitialiseBus()
+        private void InitializeBus()
         {
             var bus = RabbitHutch.CreateBus("host=localhost");
             subscription = bus.Subscribe<PublishedMessage>(listenerName, m => handler(), q => q.WithTopic(topic));

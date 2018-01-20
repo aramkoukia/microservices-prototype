@@ -8,7 +8,7 @@ namespace Products.ReadModels.Client
     {
         ProductDto GetById(Guid id);
         IEnumerable<ProductDto> GetProducts();
-        void Initialise();
+        void Initialize();
         void Reset();
         void UpdateLocalCache(ProductDto newValue);
     }

@@ -20,7 +20,7 @@ namespace Products.ReadModels.Client
 
         static ProductsView()
         {
-            InitialiseProducts();
+            InitializeProducts();
 
             var ProductsEventListener = new TransientSubscriber(
                 "Products_client_productview_" + Assembly.GetEntryAssembly().FullName.Split(',').FirstOrDefault(),
@@ -28,13 +28,13 @@ namespace Products.ReadModels.Client
                 () =>
                 {
                     ResetProducts();
-                    InitialiseProducts();
+                    InitializeProducts();
                 });
         }
 
-        public void Initialise()
+        public void Initialize()
         {
-            InitialiseProducts();
+            InitializeProducts();
         }
 
         public IEnumerable<ProductDto> GetProducts()
@@ -81,7 +81,7 @@ namespace Products.ReadModels.Client
             ResetProducts();
         }
 
-        private static void InitialiseProducts()
+        private static void InitializeProducts()
         {
             var result = Try.To(LoadProducts)
                 .OnFailedAttempt(() => Thread.Sleep(1000))

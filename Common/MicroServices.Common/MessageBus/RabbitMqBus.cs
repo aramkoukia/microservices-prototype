@@ -39,7 +39,7 @@ namespace MicroServices.Common.MessageBus
             }
             else
             {
-                throw new ApplicationException("RabbitMqBus is not yet initialised");
+                throw new ApplicationException("RabbitMqBus is not yet Initialized");
             }
         }
 
