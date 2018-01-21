@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadModel", "ReadModel", "{51119099-EDEC-4325-96EC-1BC7483E6BB6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadModelService", "ReadModelService", "{51119099-EDEC-4325-96EC-1BC7483E6BB6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F13AB59D-7BF7-460F-AF5E-97B65BFAE44C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainService", "DomainService", "{F13AB59D-7BF7-460F-AF5E-97B65BFAE44C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{3A37F4C0-8133-403A-9490-856E00D4A5C7}"
 EndProject

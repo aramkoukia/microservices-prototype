@@ -119,7 +119,7 @@
     </ProjectReference>
     <ProjectReference Include="..\Products.Common\Products.Common.csproj">
       <Project>{5e571774-1d77-4f79-af04-27a85dac1340}</Project>
-      <Name>Admin.Common</Name>
+      <Name>Products.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
