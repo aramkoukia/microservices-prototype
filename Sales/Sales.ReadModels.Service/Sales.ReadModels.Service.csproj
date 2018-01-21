@@ -118,9 +118,17 @@
       <Project>{D3D97918-2C26-4BAE-A0C5-F90B6F1085DD}</Project>
       <Name>MicroServices.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Products\Products.Common\Products.Common.csproj">
+      <Project>{5E571774-1D77-4F79-AF04-27A85DAC1340}</Project>
+      <Name>Products.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Products\Products.ReadModels.Client\Products.ReadModels.Client.csproj">
       <Project>{c46d3e71-e08d-4f45-b54b-03e3759028e3}</Project>
       <Name>Products.ReadModels.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Products\Products.ReadModels.Service\Products.ReadModels.Service.csproj">
+      <Project>{D91AEECC-CA6A-48A2-90D6-5146D945DEAB}</Project>
+      <Name>Products.ReadModels.Service</Name>
     </ProjectReference>
     <ProjectReference Include="..\Sales.Common\Sales.Common.csproj">
       <Project>{D3478255-CB14-4F5D-AC78-2E48B5EC2439}</Project>
