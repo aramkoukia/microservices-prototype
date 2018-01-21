@@ -110,24 +110,24 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MicroService-Common\MicroServices.Common.General\MicroServices.Common.General.csproj">
+    <ProjectReference Include="..\..\Common\MicroServices.Common.General\MicroServices.Common.General.csproj">
       <Project>{fc24d38f-fb96-43e1-b21e-b6e1bfa1dc11}</Project>
       <Name>MicroServices.Common.General</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\MicroService-Common\MicroServices.Common\MicroServices.Common.csproj">
-      <Project>{d3d97918-2c26-4bae-a0c5-f90b6f1085dd}</Project>
+    <ProjectReference Include="..\..\Common\MicroServices.Common\MicroServices.Common.csproj">
+      <Project>{D3D97918-2C26-4BAE-A0C5-F90B6F1085DD}</Project>
       <Name>MicroServices.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Admin.ReadModels.Client\Products.ReadModels.Client.csproj">
+    <ProjectReference Include="..\..\Products\Products.ReadModels.Client\Products.ReadModels.Client.csproj">
       <Project>{c46d3e71-e08d-4f45-b54b-03e3759028e3}</Project>
       <Name>Products.ReadModels.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PullRequest.Common\Sales.Common.csproj">
+    <ProjectReference Include="..\Sales.Common\Sales.Common.csproj">
       <Project>{D3478255-CB14-4F5D-AC78-2E48B5EC2439}</Project>
       <Name>Sales.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PullRequest.Service\Sales.Service.csproj">
-      <Project>{2D8DF944-BAC5-4CE1-807A-6FFCE3C51284}</Project>
+    <ProjectReference Include="..\Sales.Service\Sales.Service.csproj">
+      <Project>{2d8df944-bac5-4ce1-807a-6ffce3c51284}</Project>
       <Name>Sales.Service</Name>
     </ProjectReference>
   </ItemGroup>

@@ -43,7 +43,7 @@ namespace Sales.Service
             ServiceLocator.Bus = bus;
 
             var messageBusEndPoint = "Sales_service";
-            var topicFilter = "Admin.Common.Events";
+            var topicFilter = "Products.Common.Events";
 
             var eventStorePort = 12900;
 

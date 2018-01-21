@@ -11,19 +11,19 @@ namespace Sales.Service.MicroServices.Product.View
 {
     public class ProductView
     {
-        private readonly Admin.ReadModels.Client.IProductsView adminProducts;
+        private readonly Products.ReadModels.Client.IProductsView ProductsProducts;
         private readonly ConcurrentDictionary<Guid, Domain.Product> products = new ConcurrentDictionary<Guid, Domain.Product>();
 
-        public ProductView(Admin.ReadModels.Client.IProductsView adminProductView)
+        public ProductView(Products.ReadModels.Client.IProductsView ProductsProductView)
         {
-            adminProducts = adminProductView;
+            ProductsProducts = ProductsProductView;
             if (products.Count == 0)
             {
                 InitialiseProducts();
             }
         }
 
-        public ProductView() : this(new Admin.ReadModels.Client.ProductsView()) { }
+        public ProductView() : this(new Products.ReadModels.Client.ProductsView()) { }
 
         public IEnumerable<Domain.Product> GetAll()
         {
@@ -32,7 +32,7 @@ namespace Sales.Service.MicroServices.Product.View
 
         private void InitialiseProducts()
         {
-            var transformedDtos = adminProducts.GetProducts().Select(p => new Domain.Product
+            var transformedDtos = ProductsProducts.GetProducts().Select(p => new Domain.Product
             {
                 Id = p.Id,
                 Price = p.Price

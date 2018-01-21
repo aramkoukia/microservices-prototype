@@ -1,4 +1,5 @@
-﻿using Admin.Common.Dto;
+﻿using Products.Common.Dto;
+using Products.ReadModels.Client;
 using Sales.Service.MicroServices.Product.View;
 using System;
 using System.Collections.Generic;
@@ -11,17 +12,17 @@ namespace Sales.Service.Tests
 {
     public class Products
     {
-        readonly Admin.ReadModels.Client.IProductsView adminProductView;
+        readonly IProductsView ProductsProductView;
         readonly ProductView productView;
 
         public Products()
         {
-            adminProductView = new FakeAdminProductView();
-            productView = new ProductView(adminProductView);
+            ProductsProductView = new FakeProductsProductView();
+            productView = new ProductView(ProductsProductView);
         }
 
         [Fact]
-        public void Should_retrieve_a_list_of_all_products_via_admin_client_when_view_is_created()
+        public void Should_retrieve_a_list_of_all_products_via_Products_client_when_view_is_created()
         {
             Assert.Equal(2, productView.GetAll().Count());
         }
@@ -35,11 +36,11 @@ namespace Sales.Service.Tests
         }
     }
 
-    public class FakeAdminProductView : Admin.ReadModels.Client.IProductsView
+    public class FakeProductsProductView : IProductsView
     {
         private readonly List<ProductDto> products = new List<ProductDto>();
 
-        public FakeAdminProductView()
+        public FakeProductsProductView()
         {
             products.Add(new ProductDto
             {
@@ -72,6 +73,11 @@ namespace Sales.Service.Tests
         }
 
         public void Initialise()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Initialize()
         {
             throw new NotImplementedException();
         }

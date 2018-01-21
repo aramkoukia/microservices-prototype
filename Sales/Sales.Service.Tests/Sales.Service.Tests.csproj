@@ -66,23 +66,23 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MicroService-Common\MicroServices.Common.General\MicroServices.Common.General.csproj">
+    <ProjectReference Include="..\..\Common\MicroServices.Common.General\MicroServices.Common.General.csproj">
       <Project>{fc24d38f-fb96-43e1-b21e-b6e1bfa1dc11}</Project>
       <Name>MicroServices.Common.General</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\MicroService-Common\MicroServices.Common\MicroServices.Common.csproj">
+    <ProjectReference Include="..\..\Common\MicroServices.Common\MicroServices.Common.csproj">
       <Project>{d3d97918-2c26-4bae-a0c5-f90b6f1085dd}</Project>
       <Name>MicroServices.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Admin.Common\Products.Common.csproj">
-      <Project>{5E571774-1D77-4F79-AF04-27A85DAC1340}</Project>
+    <ProjectReference Include="..\..\Products\Products.Common\Products.Common.csproj">
+      <Project>{5e571774-1d77-4f79-af04-27a85dac1340}</Project>
       <Name>Products.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Admin.ReadModels.Client\Products.ReadModels.Client.csproj">
-      <Project>{C46D3E71-E08D-4F45-B54B-03E3759028E3}</Project>
+    <ProjectReference Include="..\..\Products\Products.ReadModels.Client\Products.ReadModels.Client.csproj">
+      <Project>{c46d3e71-e08d-4f45-b54b-03e3759028e3}</Project>
       <Name>Products.ReadModels.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PullRequest.Service\Sales.Service.csproj">
+    <ProjectReference Include="..\Sales.Service\Sales.Service.csproj">
       <Project>{2d8df944-bac5-4ce1-807a-6ffce3c51284}</Project>
       <Name>Sales.Service</Name>
     </ProjectReference>

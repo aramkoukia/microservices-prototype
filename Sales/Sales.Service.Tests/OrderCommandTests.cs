@@ -27,7 +27,7 @@ namespace Sales.Service.Tests
         public void Should_fail_when_no_product_is_provided_and_a_new_order_is_started()
         {
             var command = new StartNewOrder(Guid.NewGuid(), Guid.Empty, 1);
-            var handler = new OrderCommandHandlers(null, new FakeAdminProductView());
+            var handler = new OrderCommandHandlers(null, new FakeProductsProductView());
             Assert.Throws<ArgumentNullException>(() => handler.Handle(command));
         }
 
@@ -35,7 +35,7 @@ namespace Sales.Service.Tests
         public void Should_fail_when_starting_a_new_order_and_product_quantity_is_zero()
         {
             var command = new StartNewOrder(Guid.NewGuid(), Guid.NewGuid(), 0);
-            var handler = new OrderCommandHandlers(null, new FakeAdminProductView());
+            var handler = new OrderCommandHandlers(null, new FakeProductsProductView());
             Assert.Throws<ArgumentOutOfRangeException>(() => handler.Handle(command));
         }
 
@@ -43,11 +43,11 @@ namespace Sales.Service.Tests
         public void Should_succeed_when_starting_a_new_order_with_a_valid_product_and_quantity()
         {
             var id = Guid.NewGuid();
-            var adminProducts = new FakeAdminProductView();
-            var productId = adminProducts.GetProducts().First().Id;
+            var ProductsProducts = new FakeProductsProductView();
+            var productId = ProductsProducts.GetProducts().First().Id;
 
             var command = new StartNewOrder(id, productId, 1);
-            var handler = new OrderCommandHandlers(repository, adminProducts);
+            var handler = new OrderCommandHandlers(repository, ProductsProducts);
             handler.Handle(command);
 
             var order = repository.GetById<Order>(id);

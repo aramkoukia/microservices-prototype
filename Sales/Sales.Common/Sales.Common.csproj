@@ -56,11 +56,14 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\MicroService-Common\MicroServices.Common.General\MicroServices.Common.General.csproj">
+    <ProjectReference Include="..\..\Common\MicroServices.Common.General\MicroServices.Common.General.csproj">
       <Project>{fc24d38f-fb96-43e1-b21e-b6e1bfa1dc11}</Project>
       <Name>MicroServices.Common.General</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\MicroServices.Common\MicroServices.Common.csproj">
+      <Project>{d3d97918-2c26-4bae-a0c5-f90b6f1085dd}</Project>
+      <Name>MicroServices.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

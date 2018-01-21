@@ -2,7 +2,7 @@
 using Sales.Service.MicroServices.Order.Commands;
 using MicroServices.Common.Repository;
 using Sales.Service.MicroServices.Product.View;
-using Admin.ReadModels.Client;
+using Products.ReadModels.Client;
 
 namespace Sales.Service.MicroServices.Order.Handlers
 {
@@ -16,10 +16,10 @@ namespace Sales.Service.MicroServices.Order.Handlers
         {
         }
 
-        public OrderCommandHandlers(IRepository repository, IProductsView adminProductsView)
+        public OrderCommandHandlers(IRepository repository, IProductsView ProductsProductsView)
         {
             this.repository = repository;
-            this.productView = new ProductView(adminProductsView);
+            this.productView = new ProductView(ProductsProductsView);
         }
 
         public void Handle(StartNewOrder message)

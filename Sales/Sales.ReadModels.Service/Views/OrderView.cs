@@ -9,7 +9,7 @@ using MicroServices.Common;
 using MicroServices.Common.Exceptions;
 using MicroServices.Common.Repository;
 using StackExchange.Redis;
-using Admin.ReadModels.Client;
+using Products.ReadModels.Client;
 using Sales.Service.MicroServices.Product.View;
 
 namespace Sales.ReadModels.Service.Views
