@@ -6,7 +6,6 @@ using Products.Service.DataTransferObjects.Commands;
 using Products.Service.MicroServices.Products.Commands;
 using Products.Service.MicroServices.Products.Handlers;
 using MicroServices.Common.Exceptions;
-using System.Web.Http.Results;
 
 namespace Products.Service.Controllers
 {
@@ -58,7 +57,6 @@ namespace Products.Service.Controllers
         [Route("api/products/{id:guid}")]
         public IHttpActionResult Put(Guid id, AlterProductCommand cmd)
         {
-            // TODO: is this to be handled here or in the Aggregate?
             if (string.IsNullOrWhiteSpace(cmd.Name))
             {
                 var response = new HttpResponseMessage(HttpStatusCode.Forbidden)

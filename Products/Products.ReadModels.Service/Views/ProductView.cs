@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Products.Common.Dto;
 using MicroServices.Common;
 using Products.Common.Events;
-using System.Collections.Concurrent;
-using System.Linq;
 using MicroServices.Common.Exceptions;
 using MicroServices.Common.Repository;
 
