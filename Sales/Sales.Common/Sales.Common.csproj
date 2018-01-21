@@ -7,8 +7,8 @@
     <ProjectGuid>{D3478255-CB14-4F5D-AC78-2E48B5EC2439}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cashier.Common</RootNamespace>
-    <AssemblyName>Cashier.Common</AssemblyName>
+    <RootNamespace>Sales.Common</RootNamespace>
+    <AssemblyName>Sales.Common</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

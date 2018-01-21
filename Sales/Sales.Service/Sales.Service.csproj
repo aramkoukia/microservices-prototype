@@ -7,8 +7,8 @@
     <ProjectGuid>{2D8DF944-BAC5-4CE1-807A-6FFCE3C51284}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cashier.Service</RootNamespace>
-    <AssemblyName>Cashier.Service</AssemblyName>
+    <RootNamespace>Sales.Service</RootNamespace>
+    <AssemblyName>Sales.Service</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

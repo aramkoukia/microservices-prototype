@@ -7,8 +7,8 @@
     <ProjectGuid>{B1ECFB12-A337-49FF-AD09-304B5292A548}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cashier.ReadModels.Service</RootNamespace>
-    <AssemblyName>Cashier.ReadModels.Service</AssemblyName>
+    <RootNamespace>Sales.ReadModels.Service</RootNamespace>
+    <AssemblyName>Sales.ReadModels.Service</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

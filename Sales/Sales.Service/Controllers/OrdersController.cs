@@ -4,7 +4,6 @@ using System.Net.Http;
 using System.Web.Http;
 using Sales.Service.DataTransferObjects.Commands;
 using Sales.Service.MicroServices.Order.Commands;
-using MicroServices.Common.Exceptions;
 
 namespace Sales.Service.Controllers
 {

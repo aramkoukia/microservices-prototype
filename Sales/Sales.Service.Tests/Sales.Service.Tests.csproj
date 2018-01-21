@@ -9,8 +9,8 @@
     <ProjectGuid>{FDED84A3-EC77-42E1-BDAA-E5A2A56E800F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cashier.Service.Tests</RootNamespace>
-    <AssemblyName>Cashier.Service.Tests</AssemblyName>
+    <RootNamespace>Sales.Service.Tests</RootNamespace>
+    <AssemblyName>Sales.Service.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
